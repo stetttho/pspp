@@ -60,8 +60,32 @@ public class Scanner {
          while (ch <= ' ') nextCh(); // skip blanks, tabs, eols
          Token t = new Token(); t.pos = pos; t.line = line;
          switch (ch) {        
-         	 case 'P' : readName(t); break;
+         	 case 'A' : readName(t); break;
+         	 case 'B' : readName(t); break;
+         	 case 'C' : readName(t); break;
+         	 case 'D' : readName(t); break;
          	 case 'E' : readName(t); break;
+         	 case 'F' : readName(t); break;
+         	 case 'G' : readName(t); break;
+         	 case 'H' : readName(t); break;
+         	 case 'I' : readName(t); break;
+         	 case 'J' : readName(t); break;
+         	 case 'K' : readName(t); break;
+         	 case 'L' : readName(t); break;
+         	 case 'M' : readName(t); break;
+         	 case 'N' : readName(t); break;
+         	 case 'O' : readName(t); break;
+         	 case 'P' : readName(t); break;
+         	 case 'Q' : readName(t); break;
+         	 case 'R' : readName(t); break;
+         	 case 'S' : readName(t); break;
+         	 case 'T' : readName(t); break;
+         	 case 'U' : readName(t); break;
+         	 case 'V' : readName(t); break;
+         	 case 'W' : readName(t); break;
+         	 case 'X' : readName(t); break;
+         	 case 'Y' : readName(t); break;
+         	 case 'Z' : readName(t); break;       
              case '0': case '1': case '2': case '3': case '4': case '5': case '6': case '7': case '8': case '9':
                         readNumber(t); break;
              case '+' : t.kind = Token.PLUS; nextCh(); break;

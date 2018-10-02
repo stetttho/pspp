@@ -56,9 +56,7 @@ class Calculator {
 			push(Scanner.token.val);
 		} else if (Scanner.la == Token.IDENT) {
 			Scanner.scan();
-			push(Scanner.token.val);
-			
-			
+			push(Scanner.token.val);		
 		}
 	}
 
